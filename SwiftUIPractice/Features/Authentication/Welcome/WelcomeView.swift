@@ -8,13 +8,20 @@
 import SwiftUI
 
 struct WelcomeView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+  var body: some View {
+    ZStack {
+      Image(Images.juise).resizable()
+      Color.appBlack.opacity(0.3)
+      VStack {
+        Image(Icons.appLogo).padding(Edge.Set.bottom, 40)
+        SignButtons()
+      }.padding(.paddingAll())
     }
+  }
 }
 
 struct WelcomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        WelcomeView()
-    }
+  static var previews: some View {
+    WelcomeView().statusBar(hidden: true)
+  }
 }

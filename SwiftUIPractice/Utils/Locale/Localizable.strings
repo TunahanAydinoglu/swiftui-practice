@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  SwiftUIPractice
+
+  Created by Tunahan Aydınoglu on 20.04.2023.
+  
+*/
+
+"sign_in_facebook"="Sign in with Facebook";
+"sign_in_google"="Sign in with Google";
+"sign_in_apple"="Sign in with Apple";
+"sign_up_email"="Sign up with Email";

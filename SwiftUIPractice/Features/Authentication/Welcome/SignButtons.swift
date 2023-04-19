@@ -8,19 +8,19 @@
 import SwiftUI
 
 struct SignButtons: View {
-    var body: some View {
-      VStack {
-        SignFacebookButton()
-        SignGoogleButton()
-        SignAppleButton()
-      }
+  var body: some View {
+    VStack {
+      SignFacebookButton()
+      SignGoogleButton()
+      SignAppleButton()
     }
+  }
 }
 
 struct SignButtons_Previews: PreviewProvider {
-    static var previews: some View {
-        SignButtons()
-    }
+  static var previews: some View {
+    SignButtons()
+  }
 }
 
 struct SignFacebookButton: View {
@@ -28,7 +28,7 @@ struct SignFacebookButton: View {
     SignButton(onTap: {
       print("face")
     },
-               text: Texts.signFacebook,
+               text: TextKeys.signInFacebook.locale(),
                icon: Icons.facebook,
                tintColor: .appWhite
     )
@@ -40,7 +40,7 @@ struct SignGoogleButton: View {
     SignButton(onTap: {
       print("google")
     },
-               text: Texts.signGoogle,
+               text: TextKeys.signInGoogle.locale(),
                icon: Icons.google,
                tintColor: .appWhite
     )
@@ -52,7 +52,7 @@ struct SignAppleButton: View {
     SignButton(onTap: {
       print("apple")
     },
-               text: Texts.signApple,
+               text: TextKeys.signInApple.locale(),
                icon: Icons.apple,
                tintColor: .appWhite
     )

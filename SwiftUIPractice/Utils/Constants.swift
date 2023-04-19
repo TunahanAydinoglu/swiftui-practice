@@ -24,8 +24,9 @@ enum Icons {
   static let google = "ic_google"
 }
 
-enum Texts {
-  static let signFacebook: String = "Sign in with Facebook"
-  static let signGoogle: String = "Sign in with Google"
-  static let signApple: String = "Sign in with Apple"
+enum TextKeys {
+  static let signInFacebook: String = "sign_in_facebook"
+  static let signInGoogle: String = "sign_in_google"
+  static let signInApple: String = "sign_in_apple"
+  static let signUpEmail: String = "sign_up_email"
 }

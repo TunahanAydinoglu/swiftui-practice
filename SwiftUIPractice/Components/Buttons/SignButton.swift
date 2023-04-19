@@ -9,10 +9,10 @@ import SwiftUI
 
 struct SignButton: View {
   var onTap: () -> Void?
-  let text: String
+  let text: LocalizedStringKey
   let icon: String
   var tintColor: Color = .appWhite
-
+  
   var body: some View {
     Button {
       onTap()
@@ -29,13 +29,13 @@ struct SignButton: View {
 }
 
 struct SignButton_Previews: PreviewProvider {
-    static var previews: some View {
-      SignButton(
-        onTap: {},
-        text: Texts.signFacebook,
-        icon: Icons.facebook
-      )
-    }
+  static var previews: some View {
+    SignButton(
+      onTap: {},
+      text: TextKeys.signInFacebook.locale(),
+      icon: Icons.facebook
+    )
+  }
 }
 
 

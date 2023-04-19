@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SignButtons: View {
+struct SignInButtons: View {
   var body: some View {
     VStack {
       SignFacebookButton()
@@ -19,17 +19,18 @@ struct SignButtons: View {
 
 struct SignButtons_Previews: PreviewProvider {
   static var previews: some View {
-    SignButtons()
+    SignInButtons()
   }
 }
 
 struct SignFacebookButton: View {
   var body: some View {
-    SignButton(onTap: {
+    SignInButton(onTap: {
       print("face")
     },
                text: TextKeys.signInFacebook.locale(),
                icon: Icons.facebook,
+               bgColor: Color.appDeepSkyBlue,
                tintColor: .appWhite
     )
   }
@@ -37,23 +38,25 @@ struct SignFacebookButton: View {
 
 struct SignGoogleButton: View {
   var body: some View {
-    SignButton(onTap: {
+    SignInButton(onTap: {
       print("google")
     },
                text: TextKeys.signInGoogle.locale(),
                icon: Icons.google,
-               tintColor: .appWhite
+               bgColor: Color.appWhite,
+               tintColor: .appBlack
     )
   }
 }
 
 struct SignAppleButton: View {
   var body: some View {
-    SignButton(onTap: {
+    SignInButton(onTap: {
       print("apple")
     },
                text: TextKeys.signInApple.locale(),
                icon: Icons.apple,
+               bgColor: Color.appBlack,
                tintColor: .appWhite
     )
   }

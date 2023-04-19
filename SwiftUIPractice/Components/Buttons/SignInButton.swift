@@ -1,5 +1,5 @@
 //
-//  SignButton.swift
+//  SignInButton.swift
 //  SwiftUIPractice
 //
 //  Created by Tunahan Aydınoglu on 20.04.2023.
@@ -7,33 +7,43 @@
 
 import SwiftUI
 
-struct SignButton: View {
+private enum Layout {
+  static let padding: CGFloat = 16
+  static let radius: CGFloat = 8
+}
+
+struct SignInButton: View {
   var onTap: () -> Void?
   let text: LocalizedStringKey
   let icon: String
+  let bgColor: Color
   var tintColor: Color = .appWhite
-  
+
   var body: some View {
     Button {
       onTap()
     } label: {
       HStack {
         Image(icon)
-        Text(text).tint(tintColor)
+        Text(text)
         Spacer()
-      }
-    }.buttonStyle(.borderedProminent)
-      .buttonBorderShape(.roundedRectangle)
+      }.tint(tintColor)
+        .font(.title2)
+        .padding(.all, Layout.padding)
+    }.buttonBorderShape(.roundedRectangle)
       .controlSize(.large)
+      .background(bgColor)
+      .cornerRadius(Layout.radius)
   }
 }
 
 struct SignButton_Previews: PreviewProvider {
   static var previews: some View {
-    SignButton(
+    SignInButton(
       onTap: {},
       text: TextKeys.signInFacebook.locale(),
-      icon: Icons.facebook
+      icon: Icons.facebook,
+      bgColor: Color.appDeepSkyBlue
     )
   }
 }

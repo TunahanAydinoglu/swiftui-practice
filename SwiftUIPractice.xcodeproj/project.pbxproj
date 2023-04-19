@@ -17,10 +17,12 @@
 		64BA1A4729F08A1600F8D55A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BA1A4629F08A1600F8D55A /* Constants.swift */; };
 		64BA1A4A29F08DDD00F8D55A /* Colors+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BA1A4929F08DDD00F8D55A /* Colors+App.swift */; };
 		64BA1A4C29F0A5C000F8D55A /* EdgeInsets+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BA1A4B29F0A5C000F8D55A /* EdgeInsets+Extensions.swift */; };
-		64BA1A5029F0A67300F8D55A /* SignButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BA1A4F29F0A67300F8D55A /* SignButton.swift */; };
-		64BA1A5229F0A7E300F8D55A /* SignButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BA1A5129F0A7E300F8D55A /* SignButtons.swift */; };
+		64BA1A5029F0A67300F8D55A /* SignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BA1A4F29F0A67300F8D55A /* SignInButton.swift */; };
+		64BA1A5229F0A7E300F8D55A /* SignInButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BA1A5129F0A7E300F8D55A /* SignInButtons.swift */; };
 		64BA1A5429F0A95800F8D55A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 64BA1A5329F0A95800F8D55A /* Localizable.strings */; };
 		64BA1A5729F0AB2400F8D55A /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BA1A5629F0AB2400F8D55A /* String+Extensions.swift */; };
+		64BA1A5929F0B30500F8D55A /* SignUpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BA1A5829F0B30500F8D55A /* SignUpButton.swift */; };
+		64BA1A5B29F0B61A00F8D55A /* Geometry+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BA1A5A29F0B61A00F8D55A /* Geometry+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,10 +37,12 @@
 		64BA1A4629F08A1600F8D55A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		64BA1A4929F08DDD00F8D55A /* Colors+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+App.swift"; sourceTree = "<group>"; };
 		64BA1A4B29F0A5C000F8D55A /* EdgeInsets+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EdgeInsets+Extensions.swift"; sourceTree = "<group>"; };
-		64BA1A4F29F0A67300F8D55A /* SignButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignButton.swift; sourceTree = "<group>"; };
-		64BA1A5129F0A7E300F8D55A /* SignButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignButtons.swift; sourceTree = "<group>"; };
+		64BA1A4F29F0A67300F8D55A /* SignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInButton.swift; sourceTree = "<group>"; };
+		64BA1A5129F0A7E300F8D55A /* SignInButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInButtons.swift; sourceTree = "<group>"; };
 		64BA1A5329F0A95800F8D55A /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		64BA1A5629F0AB2400F8D55A /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		64BA1A5829F0B30500F8D55A /* SignUpButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpButton.swift; sourceTree = "<group>"; };
+		64BA1A5A29F0B61A00F8D55A /* Geometry+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Geometry+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				64BA1A3629F0847B00F8D55A /* WelcomeView.swift */,
-				64BA1A5129F0A7E300F8D55A /* SignButtons.swift */,
+				64BA1A5129F0A7E300F8D55A /* SignInButtons.swift */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -149,6 +153,7 @@
 				64BA1A4929F08DDD00F8D55A /* Colors+App.swift */,
 				64BA1A4B29F0A5C000F8D55A /* EdgeInsets+Extensions.swift */,
 				64BA1A5629F0AB2400F8D55A /* String+Extensions.swift */,
+				64BA1A5A29F0B61A00F8D55A /* Geometry+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -164,7 +169,8 @@
 		64BA1A4E29F0A66500F8D55A /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
-				64BA1A4F29F0A67300F8D55A /* SignButton.swift */,
+				64BA1A4F29F0A67300F8D55A /* SignInButton.swift */,
+				64BA1A5829F0B30500F8D55A /* SignUpButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -255,10 +261,12 @@
 				64BA1A3729F0847B00F8D55A /* WelcomeView.swift in Sources */,
 				64BA1A2429F0830B00F8D55A /* SwiftUIPracticeApp.swift in Sources */,
 				64BA1A5729F0AB2400F8D55A /* String+Extensions.swift in Sources */,
-				64BA1A5229F0A7E300F8D55A /* SignButtons.swift in Sources */,
+				64BA1A5229F0A7E300F8D55A /* SignInButtons.swift in Sources */,
 				64BA1A4C29F0A5C000F8D55A /* EdgeInsets+Extensions.swift in Sources */,
-				64BA1A5029F0A67300F8D55A /* SignButton.swift in Sources */,
+				64BA1A5029F0A67300F8D55A /* SignInButton.swift in Sources */,
 				64BA1A4729F08A1600F8D55A /* Constants.swift in Sources */,
+				64BA1A5929F0B30500F8D55A /* SignUpButton.swift in Sources */,
+				64BA1A5B29F0B61A00F8D55A /* Geometry+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,8 +8,8 @@
 import SwiftUI
 
 private enum Layout {
-  static let dividerHeight: CGFloat = 2
-  static let padding: CGFloat = 16
+  static let dividerHeight: CGFloat = .xxxs
+  static let padding: CGFloat = Padding.standard
   static let appLogoBottomPadding: CGFloat = 40
   static let pageBottomPaddingPercentage: CGFloat = 0.05
 }
@@ -40,7 +40,7 @@ struct BodyView: View {
         Spacer()
         SignInButtons()
         ButtonsDivider()
-        SignUpButton(onTap: {}, text: TextKeys.signUpEmail.locale())
+        CenterHeaderButton(onTap: {}, text: TextKeys.signUpEmail.locale())
         Spacer()
           .frame(height: geometry.dynamicHeight(with: Layout.pageBottomPaddingPercentage))
       }.padding(.paddingAll())

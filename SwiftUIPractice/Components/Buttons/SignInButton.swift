@@ -7,11 +7,6 @@
 
 import SwiftUI
 
-private enum Layout {
-  static let padding: CGFloat = 16
-  static let radius: CGFloat = 8
-}
-
 struct SignInButton: View {
   var onTap: () -> Void?
   let text: LocalizedStringKey
@@ -29,11 +24,11 @@ struct SignInButton: View {
         Spacer()
       }.tint(tintColor)
         .font(.title2)
-        .padding(.all, Layout.padding)
+        .padding(.all, Padding.standard)
     }.buttonBorderShape(.roundedRectangle)
       .controlSize(.large)
       .background(bgColor)
-      .cornerRadius(Layout.radius)
+      .cornerRadius(Radius.low)
   }
 }
 

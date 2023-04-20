@@ -1,5 +1,5 @@
 //
-//  SignUpButton.swift
+//  CenterHeaderButton.swift
 //  SwiftUIPractice
 //
 //  Created by Tunahan Aydınoglu on 20.04.2023.
@@ -7,13 +7,7 @@
 
 import SwiftUI
 
-private enum Layout {
-  static let padding: CGFloat = 16
-  static let radius: CGFloat = 8
-  static let fontSize: CGFloat = 16
-}
-
-struct SignUpButton: View {
+struct CenterHeaderButton: View {
   var onTap: () -> Void?
   let text: LocalizedStringKey
   var bgColor: Color = Color.appPeach
@@ -28,18 +22,18 @@ struct SignUpButton: View {
         Text(text)
         Spacer()
       }.tint(tintColor)
-        .font(.system(size: Layout.fontSize, weight: .semibold))
-        .padding(.all, Layout.padding)
+        .font(.system(size: FontSize.standart, weight: .semibold))
+        .padding(.all, Padding.standard)
     }.buttonBorderShape(.roundedRectangle)
       .controlSize(.large)
       .background(bgColor)
-      .cornerRadius(Layout.radius)
+      .cornerRadius(Radius.low)
   }
 }
 
-struct SignUpButton_Previews: PreviewProvider {
+struct CenterHeaderButton_Previews: PreviewProvider {
     static var previews: some View {
-      SignUpButton(
+      CenterHeaderButton(
         onTap: {},
         text: TextKeys.signUpEmail.locale(),
         bgColor: Color.appPeach

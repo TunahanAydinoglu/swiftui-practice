@@ -12,6 +12,7 @@ enum Images {
   static let onboardDeliver: String = "img_deliver"
   static let onboardHandPick: String = "img_hand_pick"
   static let onboardShop: String = "img_shop"
+  static let volcano: String = "img_volcano"
 }
 
 enum Colors {
@@ -19,6 +20,10 @@ enum Colors {
   static let deepSkyBlue: String = "deepSkyBlue"
   static let peach: String = "peach"
   static let clooney: String = "clooney"
+  static let carl: String = "carl"
+  static let teflon: String = "teflon"
+  static let gandalf: String = "gandalf"
+  static let cornFlowerBlue: String = "cornFlowerBlue"
 }
 
 enum Icons {
@@ -26,6 +31,8 @@ enum Icons {
   static let facebook = "ic_facebook"
   static let apple = "ic_apple"
   static let google = "ic_google"
+  static let mail = "ic_mail"
+  static let lock = "ic_lock"
 }
 
 enum TextKeys {
@@ -34,4 +41,13 @@ enum TextKeys {
   static let signInApple: String = "sign_in_apple"
   static let signUpEmail: String = "sign_up_email"
   static let getStarted: String = "get_started"
+  static let welcomeBack: String = "welcome_back"
+  static let emailPlaceHolder: String = "email_placeholder"
+  static let passwordPlaceholder: String = "password_placeholder"
+  static let createAccount: String = "create_account"
+  static let termsAndCondition: String = "terms_and_condition"
+}
+
+enum Texts {
+  static let createInfo: String = "By clicking \"Create Account\", I agree to SnackOverflow's [TOS](www.aydinoglu.dev) and [Privacy Policy](www.aydinoglu.dev/privacy)"
 }

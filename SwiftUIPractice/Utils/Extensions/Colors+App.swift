@@ -27,4 +27,20 @@ extension Color {
   static var appClooney: Color {
     Color(Colors.clooney)
   }
+
+  static var appCarl: Color {
+    Color(Colors.carl)
+  }
+
+  static var appTeflon: Color {
+    Color(Colors.teflon)
+  }
+
+  static var appGandalf: Color {
+    Color(Colors.gandalf)
+  }
+
+  static var appCornFlowerBlue: Color {
+    Color(Colors.cornFlowerBlue)
+  }
 }

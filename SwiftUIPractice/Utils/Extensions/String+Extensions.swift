@@ -11,4 +11,8 @@ extension String {
   func locale() -> LocalizedStringKey {
     return LocalizedStringKey(self)
   }
+
+  func image() -> Image {
+    Image(self)
+  }
 }

@@ -11,3 +11,8 @@
 "sign_in_apple"="Sign in with Apple";
 "sign_up_email"="Sign up with Email";
 "get_started"="Get started";
+"welcome_back"="Welcome back!";
+"email_placeholder"="Write your email";
+"password_placeholder"="Write your password";
+"create_account"="Create Account";
+"terms_and_condition"="By clicking \"Create Account\", I agree to SnackOverflow's [TOS](www.aydinoglu.dev) and [Privacy Policy](www.aydinoglu.dev/privacy)";

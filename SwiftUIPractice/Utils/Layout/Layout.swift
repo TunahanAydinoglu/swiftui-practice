@@ -19,7 +19,9 @@ extension CGFloat {
 }
 
 enum FontSize {
+  static let thinBody: CGFloat = .st
   static let standart: CGFloat = .sm
+  static let mdTitle: CGFloat = .md
   static let lgTitle: CGFloat = .lg
 }
 

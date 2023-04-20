@@ -30,7 +30,7 @@ struct WelcomeView_Previews: PreviewProvider {
   }
 }
 
-struct BodyView: View {
+private struct BodyView: View {
   var body: some View {
     GeometryReader { geometry in
       VStack {
@@ -48,7 +48,7 @@ struct BodyView: View {
   }
 }
 
-struct ButtonsDivider: View {
+private struct ButtonsDivider: View {
   var body: some View {
     Divider()
       .background(Color.appPeach)

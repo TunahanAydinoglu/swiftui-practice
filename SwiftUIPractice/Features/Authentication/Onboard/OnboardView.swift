@@ -44,7 +44,7 @@ struct OnboardView_Previews: PreviewProvider {
   }
 }
 
-struct IndicatorRectangle: View {
+private struct IndicatorRectangle: View {
   private enum Layout {
     static let activeWidth: CGFloat = 50
     static let standardWidth: CGFloat = 20

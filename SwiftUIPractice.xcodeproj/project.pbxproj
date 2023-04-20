@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		64B4235A29F1602700DA771F /* OnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B4235929F1602700DA771F /* OnboardView.swift */; };
 		64B4235D29F1644E00DA771F /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B4235C29F1644E00DA771F /* Layout.swift */; };
+		64B4236029F16B5A00DA771F /* OnboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B4235F29F16B5A00DA771F /* OnboardModel.swift */; };
 		64BA1A2429F0830B00F8D55A /* SwiftUIPracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BA1A2329F0830B00F8D55A /* SwiftUIPracticeApp.swift */; };
 		64BA1A2629F0830B00F8D55A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BA1A2529F0830B00F8D55A /* ContentView.swift */; };
 		64BA1A2B29F0830B00F8D55A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64BA1A2A29F0830B00F8D55A /* Preview Assets.xcassets */; };
@@ -25,11 +26,13 @@
 		64BA1A5729F0AB2400F8D55A /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BA1A5629F0AB2400F8D55A /* String+Extensions.swift */; };
 		64BA1A5929F0B30500F8D55A /* CenterHeaderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BA1A5829F0B30500F8D55A /* CenterHeaderButton.swift */; };
 		64BA1A5B29F0B61A00F8D55A /* Geometry+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BA1A5A29F0B61A00F8D55A /* Geometry+Extensions.swift */; };
+		64D6086629F191270087C6BF /* OnboardSliderCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D6086529F191270087C6BF /* OnboardSliderCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		64B4235929F1602700DA771F /* OnboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardView.swift; sourceTree = "<group>"; };
 		64B4235C29F1644E00DA771F /* Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
+		64B4235F29F16B5A00DA771F /* OnboardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardModel.swift; sourceTree = "<group>"; };
 		64BA1A2029F0830B00F8D55A /* SwiftUIPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64BA1A2329F0830B00F8D55A /* SwiftUIPracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPracticeApp.swift; sourceTree = "<group>"; };
 		64BA1A2529F0830B00F8D55A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		64BA1A5629F0AB2400F8D55A /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		64BA1A5829F0B30500F8D55A /* CenterHeaderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterHeaderButton.swift; sourceTree = "<group>"; };
 		64BA1A5A29F0B61A00F8D55A /* Geometry+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Geometry+Extensions.swift"; sourceTree = "<group>"; };
+		64D6086529F191270087C6BF /* OnboardSliderCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardSliderCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				64B4235929F1602700DA771F /* OnboardView.swift */,
+				64D6086529F191270087C6BF /* OnboardSliderCard.swift */,
 			);
 			path = Onboard;
 			sourceTree = "<group>";
@@ -74,6 +79,14 @@
 				64B4235C29F1644E00DA771F /* Layout.swift */,
 			);
 			path = Layout;
+			sourceTree = "<group>";
+		};
+		64B4235E29F16B4900DA771F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				64B4235F29F16B5A00DA771F /* OnboardModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		64BA1A1729F0830B00F8D55A = {
@@ -95,6 +108,7 @@
 		64BA1A2229F0830B00F8D55A /* SwiftUIPractice */ = {
 			isa = PBXGroup;
 			children = (
+				64B4235E29F16B4900DA771F /* Models */,
 				64BA1A4D29F0A65300F8D55A /* Components */,
 				64BA1A3329F083D900F8D55A /* Features */,
 				64BA1A3229F083CD00F8D55A /* Resources */,
@@ -285,10 +299,12 @@
 				64B4235A29F1602700DA771F /* OnboardView.swift in Sources */,
 				64B4235D29F1644E00DA771F /* Layout.swift in Sources */,
 				64BA1A5729F0AB2400F8D55A /* String+Extensions.swift in Sources */,
+				64B4236029F16B5A00DA771F /* OnboardModel.swift in Sources */,
 				64BA1A5229F0A7E300F8D55A /* SignInButtons.swift in Sources */,
 				64BA1A4C29F0A5C000F8D55A /* EdgeInsets+Extensions.swift in Sources */,
 				64BA1A5029F0A67300F8D55A /* SignInButton.swift in Sources */,
 				64BA1A4729F08A1600F8D55A /* Constants.swift in Sources */,
+				64D6086629F191270087C6BF /* OnboardSliderCard.swift in Sources */,
 				64BA1A5929F0B30500F8D55A /* CenterHeaderButton.swift in Sources */,
 				64BA1A5B29F0B61A00F8D55A /* Geometry+Extensions.swift in Sources */,
 			);

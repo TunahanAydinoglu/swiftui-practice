@@ -18,6 +18,7 @@ enum Colors {
   static let black: String = "black"
   static let deepSkyBlue: String = "deepSkyBlue"
   static let peach: String = "peach"
+  static let clooney: String = "clooney"
 }
 
 enum Icons {

@@ -23,4 +23,8 @@ extension Color {
   static var appPeach: Color {
     Color(Colors.peach)
   }
+
+  static var appClooney: Color {
+    Color(Colors.clooney)
+  }
 }

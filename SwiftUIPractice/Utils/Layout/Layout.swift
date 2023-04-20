@@ -20,6 +20,7 @@ extension CGFloat {
 
 enum FontSize {
   static let standart: CGFloat = .sm
+  static let lgTitle: CGFloat = .lg
 }
 
 enum Padding {

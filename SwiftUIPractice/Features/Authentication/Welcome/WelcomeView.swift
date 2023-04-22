@@ -20,13 +20,14 @@ struct WelcomeView: View {
       Image(Images.juise).resizable()
       Color.appBlack.opacity(0.3)
       BodyView()
-    }
+    }.ignoresSafeArea()
+      .navigationBarHidden(true)
   }
 }
 
 struct WelcomeView_Previews: PreviewProvider {
   static var previews: some View {
-    WelcomeView().ignoresSafeArea()
+    WelcomeView()
   }
 }
 

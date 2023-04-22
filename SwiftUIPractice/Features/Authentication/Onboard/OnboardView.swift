@@ -8,31 +8,44 @@
 import SwiftUI
 
 struct OnboardView: View {
-  private let pageData: [OnboardModel] = OnboardModel.mockDatas
-  private var dataIndexRange = 0...OnboardModel.mockDatas.count-1
-  @State private var currentIndex: Int = 0
+  @StateObject var viewModel = OnboardViewModel()
+  
+  private var dataIndexRange: ClosedRange<Int> {
+    0...viewModel.data.count-1
+  }
+  
   var body: some View {
-    GeometryReader { geometry in
-      VStack {
-        Spacer()
-        TabView(
-          selection: $currentIndex,
-          content: {
+    NavigationView {
+      GeometryReader { geometry in
+        VStack {
+          Spacer()
+          TabView(
+            selection: $viewModel.currentIndex,
+            content: {
+              ForEach(dataIndexRange, id: \.self) { index in
+                OnboardSliderCard(
+                  viewModel: viewModel.data[index],
+                  imageHeigh: geometry.dynamicHeight(with: 0.45)
+                )
+              }
+            }).tabViewStyle(.page(indexDisplayMode: .never))
+          Spacer()
+          HStack{
             ForEach(dataIndexRange, id: \.self) { index in
-              OnboardSliderCard(
-                viewModel: pageData[index],
-                imageHeigh: geometry.dynamicHeight(with: 0.45)
+              IndicatorRectangle(
+                isActive: index == viewModel.currentIndex
               )
             }
-          }).tabViewStyle(.page(indexDisplayMode: .never))
-        Spacer()
-        HStack{
-          ForEach(dataIndexRange, id: \.self) { index in
-            IndicatorRectangle(isActive: index == currentIndex)
+          }.frame(height: .xs)
+          NavigationLink(isActive: $viewModel.needShowOnboard) {
+            WelcomeView()
+          } label: {
+            CenterHeaderButton(onTap: {
+              viewModel.onboardFinish()
+            }, text: TextKeys.getStarted.locale())
+            .padding(.all, Padding.standard)
           }
-        }.frame(height: .xs)
-        CenterHeaderButton(onTap: {}, text: TextKeys.getStarted.locale())
-          .padding(.all, Padding.standard)
+        }
       }
     }
   }
@@ -49,7 +62,7 @@ private struct IndicatorRectangle: View {
     static let activeWidth: CGFloat = 50
     static let standardWidth: CGFloat = 20
   }
-
+  
   var isActive: Bool = false
   
   var width: CGFloat {

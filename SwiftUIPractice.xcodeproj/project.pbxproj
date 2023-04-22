@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		646BE72329F1D314006D9312 /* TextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646BE72229F1D314006D9312 /* TextFieldModifier.swift */; };
+		64AF84DF29F3E3D200786FDC /* OnboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AF84DE29F3E3D200786FDC /* OnboardViewModel.swift */; };
+		64AF84E229F3E6B500786FDC /* UserDefaultsCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AF84E129F3E6B500786FDC /* UserDefaultsCache.swift */; };
 		64B4235A29F1602700DA771F /* OnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B4235929F1602700DA771F /* OnboardView.swift */; };
 		64B4235D29F1644E00DA771F /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B4235C29F1644E00DA771F /* Layout.swift */; };
 		64B4236029F16B5A00DA771F /* OnboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B4235F29F16B5A00DA771F /* OnboardModel.swift */; };
@@ -33,6 +35,8 @@
 
 /* Begin PBXFileReference section */
 		646BE72229F1D314006D9312 /* TextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldModifier.swift; sourceTree = "<group>"; };
+		64AF84DE29F3E3D200786FDC /* OnboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewModel.swift; sourceTree = "<group>"; };
+		64AF84E129F3E6B500786FDC /* UserDefaultsCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsCache.swift; sourceTree = "<group>"; };
 		64B4235929F1602700DA771F /* OnboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardView.swift; sourceTree = "<group>"; };
 		64B4235C29F1644E00DA771F /* Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
 		64B4235F29F16B5A00DA771F /* OnboardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardModel.swift; sourceTree = "<group>"; };
@@ -76,11 +80,20 @@
 			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
+		64AF84E029F3E69700786FDC /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				64AF84E129F3E6B500786FDC /* UserDefaultsCache.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
 		64B4235829F1601800DA771F /* Onboard */ = {
 			isa = PBXGroup;
 			children = (
 				64B4235929F1602700DA771F /* OnboardView.swift */,
 				64D6086529F191270087C6BF /* OnboardSliderCard.swift */,
+				64AF84DE29F3E3D200786FDC /* OnboardViewModel.swift */,
 			);
 			path = Onboard;
 			sourceTree = "<group>";
@@ -143,6 +156,7 @@
 		64BA1A3129F0839F00F8D55A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				64AF84E029F3E69700786FDC /* Cache */,
 				646BE72129F1D2E9006D9312 /* ViewModifiers */,
 				64B4235B29F1643F00DA771F /* Layout */,
 				64BA1A5529F0A96500F8D55A /* Locale */,
@@ -323,7 +337,9 @@
 				64BA1A5729F0AB2400F8D55A /* String+Extensions.swift in Sources */,
 				646BE72329F1D314006D9312 /* TextFieldModifier.swift in Sources */,
 				64B4236029F16B5A00DA771F /* OnboardModel.swift in Sources */,
+				64AF84E229F3E6B500786FDC /* UserDefaultsCache.swift in Sources */,
 				64BA1A5229F0A7E300F8D55A /* SignInButtons.swift in Sources */,
+				64AF84DF29F3E3D200786FDC /* OnboardViewModel.swift in Sources */,
 				64BA1A4C29F0A5C000F8D55A /* EdgeInsets+Extensions.swift in Sources */,
 				64BA1A5029F0A67300F8D55A /* SignInButton.swift in Sources */,
 				64BA1A4729F08A1600F8D55A /* Constants.swift in Sources */,

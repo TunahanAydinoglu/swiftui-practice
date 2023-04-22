@@ -29,7 +29,6 @@ struct LoginView: View {
 
       Text(TextKeys.termsAndCondition.locale())
         .environment(\.openURL, OpenURLAction(handler: { url in
-          print(url)
           return .discarded
         }))
         .font(.system(size: FontSize.thinBody, weight: .regular))

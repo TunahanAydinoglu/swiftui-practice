@@ -19,7 +19,6 @@ protocol UserCacheProtocol {
 
 struct UserDefaultsCache: UserCacheProtocol {
   func read(key: LocalCacheKeys) -> String {
-    print("ttun")
     guard
       let value = UserDefaults.standard.value(forKey: key.rawValue) as? String
     else {  return "" }

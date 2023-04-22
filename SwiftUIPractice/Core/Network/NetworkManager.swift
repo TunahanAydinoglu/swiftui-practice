@@ -34,7 +34,6 @@ class NetworkManager: NetworkManaging {
   }
 
   func fetch<T: Codable>(path: NetworkPath, method: HTTPMethod, type: T.Type) async -> T? {
-    print("tunn \(path.url)")
     let request = AF.request(path.url, method: method).validate().serializingDecodable(T.self)
 
     let response = await request.response

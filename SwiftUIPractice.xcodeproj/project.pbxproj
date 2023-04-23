@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		6402654729F446EA00DE5482 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6402654629F446EA00DE5482 /* NetworkManager.swift */; };
 		6402654A29F449FB00DE5482 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6402654929F449FB00DE5482 /* UserResponse.swift */; };
+		642E609729F542B8009101C5 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642E609629F542B8009101C5 /* LoginViewModel.swift */; };
+		642E609929F5453C009101C5 /* LoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642E609829F5453C009101C5 /* LoginModels.swift */; };
 		643F444029F45779009693E6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 643F443F29F45779009693E6 /* Alamofire */; };
 		643F444829F45D0C009693E6 /* SwiftUIPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643F444729F45D0C009693E6 /* SwiftUIPracticeTests.swift */; };
 		646BE72329F1D314006D9312 /* TextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646BE72229F1D314006D9312 /* TextFieldModifier.swift */; };
@@ -50,6 +52,8 @@
 /* Begin PBXFileReference section */
 		6402654629F446EA00DE5482 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		6402654929F449FB00DE5482 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
+		642E609629F542B8009101C5 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		642E609829F5453C009101C5 /* LoginModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModels.swift; sourceTree = "<group>"; };
 		643F444529F45D0C009693E6 /* SwiftUIPracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIPracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		643F444729F45D0C009693E6 /* SwiftUIPracticeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPracticeTests.swift; sourceTree = "<group>"; };
 		646BE72229F1D314006D9312 /* TextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldModifier.swift; sourceTree = "<group>"; };
@@ -119,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				6402654929F449FB00DE5482 /* UserResponse.swift */,
+				642E609829F5453C009101C5 /* LoginModels.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -313,6 +318,7 @@
 			isa = PBXGroup;
 			children = (
 				64D6086829F195AB0087C6BF /* LoginView.swift */,
+				642E609629F542B8009101C5 /* LoginViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -436,12 +442,14 @@
 			files = (
 				64BA1A2629F0830B00F8D55A /* ContentView.swift in Sources */,
 				64BA1A4A29F08DDD00F8D55A /* Colors+App.swift in Sources */,
+				642E609729F542B8009101C5 /* LoginViewModel.swift in Sources */,
 				64BA1A3729F0847B00F8D55A /* WelcomeView.swift in Sources */,
 				64BA1A2429F0830B00F8D55A /* SwiftUIPracticeApp.swift in Sources */,
 				64B4235A29F1602700DA771F /* OnboardView.swift in Sources */,
 				64B4235D29F1644E00DA771F /* Layout.swift in Sources */,
 				64BA1A5729F0AB2400F8D55A /* String+Extensions.swift in Sources */,
 				646BE72329F1D314006D9312 /* TextFieldModifier.swift in Sources */,
+				642E609929F5453C009101C5 /* LoginModels.swift in Sources */,
 				64B4236029F16B5A00DA771F /* OnboardModel.swift in Sources */,
 				64AF84E229F3E6B500786FDC /* UserDefaultsCache.swift in Sources */,
 				64BA1A5229F0A7E300F8D55A /* SignInButtons.swift in Sources */,

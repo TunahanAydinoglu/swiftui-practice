@@ -8,24 +8,30 @@
 import SwiftUI
 
 struct LoginView: View {
+  @ObservedObject private var viewModel = LoginViewModel()
 
   var body: some View {
     VStack {
       Spacer()
+      Text(viewModel.token)
       Images.volcano.image()
       Text(TextKeys.welcomeBack.locale())
         .font(.system(size: FontSize.mdTitle, weight: .semibold))
         .foregroundColor(.appTeflon)
       TextFieldWithIcon(
         hintTextKey: TextKeys.emailPlaceHolder.locale(),
-        iconName: Icons.mail
+        iconName: Icons.mail,
+        text: $viewModel.email
       )
       TextFieldWithIcon(
         hintTextKey: TextKeys.passwordPlaceholder.locale(),
-        iconName: Icons.lock
+        iconName: Icons.lock,
+        text: $viewModel.password
       ).padding(.top, Padding.standard)
       Divider()
-      CenterHeaderButton(onTap: {}, text: TextKeys.createAccount.locale())
+      CenterHeaderButton(onTap: {
+        viewModel.onLoginUser()
+      }, text: TextKeys.createAccount.locale())
 
       Text(TextKeys.termsAndCondition.locale())
         .environment(\.openURL, OpenURLAction(handler: { url in
@@ -49,11 +55,12 @@ struct LoginView_Previews: PreviewProvider {
 private struct TextFieldWithIcon: View {
   let hintTextKey: LocalizedStringKey
   let iconName: String
+  var text: Binding<String>
 
   var body: some View {
     HStack {
       iconName.image()
-      TextField(hintTextKey, text: .constant(""))
+      TextField(hintTextKey, text: text)
     }.modifier(TextFieldModifier())
   }
 }

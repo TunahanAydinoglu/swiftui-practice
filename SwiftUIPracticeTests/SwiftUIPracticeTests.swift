@@ -37,12 +37,13 @@ final class SwiftUIPracticeTests: XCTestCase {
     let manager = NetworkManager.networkManager
     let path = ApiNetworkPath.users
     
-    do {
+    
+    guard
       let usersResponse = await manager.fetch(path: path, method: .get, type: UsersResponse.self)
-      XCTAssertEqual(usersResponse?.data?.isEmpty, Optional(false))
-    } catch {
+    else {
       XCTFail("The service has error. Path: \(path.rawValue)")
+      return
     }
+    XCTAssertEqual(usersResponse.data?.isEmpty, Optional(false))
   }
-  
 }

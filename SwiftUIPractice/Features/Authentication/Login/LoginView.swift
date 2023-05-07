@@ -11,38 +11,45 @@ struct LoginView: View {
   @ObservedObject private var viewModel = LoginViewModel()
 
   var body: some View {
-    VStack {
-      Spacer()
-      Text(viewModel.token)
-      Images.volcano.image()
-      Text(TextKeys.welcomeBack.locale())
-        .font(.system(size: FontSize.mdTitle, weight: .semibold))
-        .foregroundColor(.appTeflon)
-      TextFieldWithIcon(
-        hintTextKey: TextKeys.emailPlaceHolder.locale(),
-        iconName: Icons.mail,
-        text: $viewModel.email
-      )
-      TextFieldWithIcon(
-        hintTextKey: TextKeys.passwordPlaceholder.locale(),
-        iconName: Icons.lock,
-        text: $viewModel.password
-      ).padding(.top, Padding.standard)
-      Divider()
-      CenterHeaderButton(onTap: {
-        viewModel.onLoginUser()
-      }, text: TextKeys.createAccount.locale())
+    NavigationView {
+      VStack {
+        Spacer()
+        Text(viewModel.token)
+        Images.volcano.image()
+        Text(TextKeys.welcomeBack.locale())
+          .font(.system(size: FontSize.mdTitle, weight: .semibold))
+          .foregroundColor(.appTeflon)
+        TextFieldWithIcon(
+          hintTextKey: TextKeys.emailPlaceHolder.locale(),
+          iconName: Icons.mail,
+          text: $viewModel.email
+        )
+        TextFieldWithIcon(
+          hintTextKey: TextKeys.passwordPlaceholder.locale(),
+          iconName: Icons.lock,
+          text: $viewModel.password
+        ).padding(.top, Padding.standard)
+        Divider()
+        NavigationLink("", isActive: $viewModel.isLogged) {
+          Text("home page").navigationBarBackButtonHidden()
+        }
+        Group {
+          CenterHeaderButton(onTap: {
+            viewModel.onLoginUser()
+          }, text: TextKeys.createAccount.locale())
 
-      Text(TextKeys.termsAndCondition.locale())
-        .environment(\.openURL, OpenURLAction(handler: { url in
-          return .discarded
-        }))
-        .font(.system(size: FontSize.thinBody, weight: .regular))
-        .foregroundColor(.appGandalf)
-        .tint(.appCornFlowerBlue)
-        .padding(.top, Padding.standard)
-      Spacer()
-    }.padding(.all, Padding.standard)
+          Text(TextKeys.termsAndCondition.locale())
+            .environment(\.openURL, OpenURLAction(handler: { url in
+              return .discarded
+            }))
+            .font(.system(size: FontSize.thinBody, weight: .regular))
+            .foregroundColor(.appGandalf)
+            .tint(.appCornFlowerBlue)
+            .padding(.top, Padding.standard)
+          Spacer()
+        }
+      }.padding(.all, Padding.standard)
+    }.modifier(ViewStatusHiddenModifier())
   }
 }
 

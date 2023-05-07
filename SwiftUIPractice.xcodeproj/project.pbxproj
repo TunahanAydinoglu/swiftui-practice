@@ -14,6 +14,7 @@
 		643F444029F45779009693E6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 643F443F29F45779009693E6 /* Alamofire */; };
 		643F444829F45D0C009693E6 /* SwiftUIPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643F444729F45D0C009693E6 /* SwiftUIPracticeTests.swift */; };
 		646BE72329F1D314006D9312 /* TextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646BE72229F1D314006D9312 /* TextFieldModifier.swift */; };
+		64AAD5812A07BE5E009B584A /* ViewStatusHiddenModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AAD5802A07BE5E009B584A /* ViewStatusHiddenModifier.swift */; };
 		64AF84DF29F3E3D200786FDC /* OnboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AF84DE29F3E3D200786FDC /* OnboardViewModel.swift */; };
 		64AF84E229F3E6B500786FDC /* UserDefaultsCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AF84E129F3E6B500786FDC /* UserDefaultsCache.swift */; };
 		64B4235A29F1602700DA771F /* OnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B4235929F1602700DA771F /* OnboardView.swift */; };
@@ -57,6 +58,7 @@
 		643F444529F45D0C009693E6 /* SwiftUIPracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIPracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		643F444729F45D0C009693E6 /* SwiftUIPracticeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPracticeTests.swift; sourceTree = "<group>"; };
 		646BE72229F1D314006D9312 /* TextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldModifier.swift; sourceTree = "<group>"; };
+		64AAD5802A07BE5E009B584A /* ViewStatusHiddenModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStatusHiddenModifier.swift; sourceTree = "<group>"; };
 		64AF84DE29F3E3D200786FDC /* OnboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewModel.swift; sourceTree = "<group>"; };
 		64AF84E129F3E6B500786FDC /* UserDefaultsCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsCache.swift; sourceTree = "<group>"; };
 		64B4235929F1602700DA771F /* OnboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardView.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				646BE72229F1D314006D9312 /* TextFieldModifier.swift */,
+				64AAD5802A07BE5E009B584A /* ViewStatusHiddenModifier.swift */,
 			);
 			path = ViewModifiers;
 			sourceTree = "<group>";
@@ -451,6 +454,7 @@
 				646BE72329F1D314006D9312 /* TextFieldModifier.swift in Sources */,
 				642E609929F5453C009101C5 /* LoginModels.swift in Sources */,
 				64B4236029F16B5A00DA771F /* OnboardModel.swift in Sources */,
+				64AAD5812A07BE5E009B584A /* ViewStatusHiddenModifier.swift in Sources */,
 				64AF84E229F3E6B500786FDC /* UserDefaultsCache.swift in Sources */,
 				64BA1A5229F0A7E300F8D55A /* SignInButtons.swift in Sources */,
 				6402654A29F449FB00DE5482 /* UserResponse.swift in Sources */,
@@ -484,6 +488,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = example.example.SwiftUIPracticeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -501,6 +506,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = example.example.SwiftUIPracticeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

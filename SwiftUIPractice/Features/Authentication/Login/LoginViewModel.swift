@@ -13,6 +13,7 @@ import Foundation
   @Published var email: String = "eve.holt@reqres.in"
   @Published var password: String = "cityslicka"
   @Published var token: String = ""
+  @Published var isLogged: Bool = false
 
   init(){
     self.networkManager = NetworkManager(config: NetworkConfig(baseUrl: ApiNetworkPath.baseUrl))
@@ -26,14 +27,15 @@ import Foundation
 
     let requestModel = LoginRequest(email: email, password: password)
 
-      Task {
+    Task {
       let response = await networkManager.post(
         path: ApiNetworkPath.login,
         model: requestModel,
         type: LoginResponse.self
       )
 
-      token = response?.token ?? "err"
-      }
+      token = response?.token ?? ""
+      isLogged = !token.isEmpty
+    }
   }
 }

@@ -28,10 +28,10 @@ struct SignFacebookButton: View {
     SignInButton(onTap: {
       print("face")
     },
-               text: TextKeys.signInFacebook.locale(),
-               icon: Icons.facebook,
-               bgColor: Color.appDeepSkyBlue,
-               tintColor: .appWhite
+                 text: TextKeys.signInFacebook.locale(),
+                 icon: Icons.facebook.rawValue,
+                 bgColor: Color.appDeepSkyBlue,
+                 tintColor: .appWhite
     )
   }
 }
@@ -41,10 +41,10 @@ struct SignGoogleButton: View {
     SignInButton(onTap: {
       print("google")
     },
-               text: TextKeys.signInGoogle.locale(),
-               icon: Icons.google,
-               bgColor: Color.appWhite,
-               tintColor: .appBlack
+                 text: TextKeys.signInGoogle.locale(),
+                 icon: Icons.google.rawValue,
+                 bgColor: Color.appWhite,
+                 tintColor: .appBlack
     )
   }
 }
@@ -54,10 +54,10 @@ struct SignAppleButton: View {
     SignInButton(onTap: {
       print("apple")
     },
-               text: TextKeys.signInApple.locale(),
-               icon: Icons.apple,
-               bgColor: Color.appBlack,
-               tintColor: .appWhite
+                 text: TextKeys.signInApple.locale(),
+                 icon: Icons.apple.rawValue,
+                 bgColor: Color.appBlack,
+                 tintColor: .appWhite
     )
   }
 }

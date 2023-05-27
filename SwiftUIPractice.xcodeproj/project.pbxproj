@@ -11,6 +11,10 @@
 		6402654A29F449FB00DE5482 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6402654929F449FB00DE5482 /* UserResponse.swift */; };
 		642E609729F542B8009101C5 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642E609629F542B8009101C5 /* LoginViewModel.swift */; };
 		642E609929F5453C009101C5 /* LoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642E609829F5453C009101C5 /* LoginModels.swift */; };
+		6438DAD22A2217880046529A /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6438DAD12A2217880046529A /* MainTabView.swift */; };
+		6438DAD42A2223210046529A /* MainTabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6438DAD32A2223210046529A /* MainTabModel.swift */; };
+		6438DAD72A2224C30046529A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6438DAD62A2224C30046529A /* HomeView.swift */; };
+		6438DAD92A2226770046529A /* Enum+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6438DAD82A2226770046529A /* Enum+Extensions.swift */; };
 		643F444029F45779009693E6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 643F443F29F45779009693E6 /* Alamofire */; };
 		643F444829F45D0C009693E6 /* SwiftUIPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643F444729F45D0C009693E6 /* SwiftUIPracticeTests.swift */; };
 		646BE72329F1D314006D9312 /* TextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646BE72229F1D314006D9312 /* TextFieldModifier.swift */; };
@@ -55,6 +59,10 @@
 		6402654929F449FB00DE5482 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
 		642E609629F542B8009101C5 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		642E609829F5453C009101C5 /* LoginModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModels.swift; sourceTree = "<group>"; };
+		6438DAD12A2217880046529A /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		6438DAD32A2223210046529A /* MainTabModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabModel.swift; sourceTree = "<group>"; };
+		6438DAD62A2224C30046529A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		6438DAD82A2226770046529A /* Enum+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Enum+Extensions.swift"; sourceTree = "<group>"; };
 		643F444529F45D0C009693E6 /* SwiftUIPracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIPracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		643F444729F45D0C009693E6 /* SwiftUIPracticeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPracticeTests.swift; sourceTree = "<group>"; };
 		646BE72229F1D314006D9312 /* TextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldModifier.swift; sourceTree = "<group>"; };
@@ -128,6 +136,32 @@
 				642E609829F5453C009101C5 /* LoginModels.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		6438DACF2A2217740046529A /* HomeMain */ = {
+			isa = PBXGroup;
+			children = (
+				6438DAD52A2224B90046529A /* Home */,
+				6438DAD02A22177B0046529A /* Main */,
+			);
+			path = HomeMain;
+			sourceTree = "<group>";
+		};
+		6438DAD02A22177B0046529A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6438DAD12A2217880046529A /* MainTabView.swift */,
+				6438DAD32A2223210046529A /* MainTabModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6438DAD52A2224B90046529A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				6438DAD62A2224C30046529A /* HomeView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		643F444629F45D0C009693E6 /* SwiftUIPracticeTests */ = {
@@ -255,6 +289,7 @@
 		64BA1A3429F0841800F8D55A /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				6438DACF2A2217740046529A /* HomeMain */,
 				64D6086729F195A00087C6BF /* Login */,
 				64B4235829F1601800DA771F /* Onboard */,
 				64BA1A3529F0844500F8D55A /* Welcome */,
@@ -288,6 +323,7 @@
 				64BA1A4B29F0A5C000F8D55A /* EdgeInsets+Extensions.swift */,
 				64BA1A5629F0AB2400F8D55A /* String+Extensions.swift */,
 				64BA1A5A29F0B61A00F8D55A /* Geometry+Extensions.swift */,
+				6438DAD82A2226770046529A /* Enum+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -443,6 +479,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6438DAD72A2224C30046529A /* HomeView.swift in Sources */,
 				64BA1A2629F0830B00F8D55A /* ContentView.swift in Sources */,
 				64BA1A4A29F08DDD00F8D55A /* Colors+App.swift in Sources */,
 				642E609729F542B8009101C5 /* LoginViewModel.swift in Sources */,
@@ -455,13 +492,16 @@
 				642E609929F5453C009101C5 /* LoginModels.swift in Sources */,
 				64B4236029F16B5A00DA771F /* OnboardModel.swift in Sources */,
 				64AAD5812A07BE5E009B584A /* ViewStatusHiddenModifier.swift in Sources */,
+				6438DAD42A2223210046529A /* MainTabModel.swift in Sources */,
 				64AF84E229F3E6B500786FDC /* UserDefaultsCache.swift in Sources */,
 				64BA1A5229F0A7E300F8D55A /* SignInButtons.swift in Sources */,
 				6402654A29F449FB00DE5482 /* UserResponse.swift in Sources */,
 				64AF84DF29F3E3D200786FDC /* OnboardViewModel.swift in Sources */,
 				6402654729F446EA00DE5482 /* NetworkManager.swift in Sources */,
 				64BA1A4C29F0A5C000F8D55A /* EdgeInsets+Extensions.swift in Sources */,
+				6438DAD92A2226770046529A /* Enum+Extensions.swift in Sources */,
 				64BA1A5029F0A67300F8D55A /* SignInButton.swift in Sources */,
+				6438DAD22A2217880046529A /* MainTabView.swift in Sources */,
 				64BA1A4729F08A1600F8D55A /* Constants.swift in Sources */,
 				64D6086629F191270087C6BF /* OnboardSliderCard.swift in Sources */,
 				64BA1A5929F0B30500F8D55A /* CenterHeaderButton.swift in Sources */,

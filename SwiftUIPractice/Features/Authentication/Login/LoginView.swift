@@ -21,12 +21,12 @@ struct LoginView: View {
           .foregroundColor(.appTeflon)
         TextFieldWithIcon(
           hintTextKey: TextKeys.emailPlaceHolder.locale(),
-          iconName: Icons.mail,
+          iconName: Icons.mail.rawValue,
           text: $viewModel.email
         )
         TextFieldWithIcon(
           hintTextKey: TextKeys.passwordPlaceholder.locale(),
-          iconName: Icons.lock,
+          iconName: Icons.lock.rawValue,
           text: $viewModel.password
         ).padding(.top, Padding.standard)
         Divider()

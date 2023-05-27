@@ -36,7 +36,7 @@ private struct BodyView: View {
     GeometryReader { geometry in
       VStack {
         Spacer()
-        Image(Icons.appLogo)
+        Image(Icons.appLogo.rawValue)
           .padding(Edge.Set.bottom, Layout.appLogoBottomPadding)
         Spacer()
         SignInButtons()

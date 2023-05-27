@@ -16,3 +16,10 @@
 "password_placeholder"="Write your password";
 "create_account"="Create Account";
 "terms_and_condition"="By clicking \"Create Account\", I agree to SnackOverflow's [TOS](www.aydinoglu.dev) and [Privacy Policy](www.aydinoglu.dev/privacy)";
+
+//Tabs
+"tab_home"="Home";
+"tab_market"="Market";
+"tab_create"="Create";
+"tab_wishlist"="Wishlist";
+"tab_account"="Account";

@@ -37,7 +37,7 @@ struct SignButton_Previews: PreviewProvider {
     SignInButton(
       onTap: {},
       text: TextKeys.signInFacebook.locale(),
-      icon: Icons.facebook,
+      icon: Icons.facebook.rawValue,
       bgColor: Color.appDeepSkyBlue
     )
   }

@@ -26,26 +26,38 @@ enum Colors {
   static let cornFlowerBlue: String = "cornFlowerBlue"
 }
 
-enum Icons {
-  static let appLogo = "ic_app_logo"
-  static let facebook = "ic_facebook"
-  static let apple = "ic_apple"
-  static let google = "ic_google"
-  static let mail = "ic_mail"
-  static let lock = "ic_lock"
+enum Icons: String {
+  case appLogo = "ic_app_logo"
+  case facebook = "ic_facebook"
+  case apple = "ic_apple"
+  case google = "ic_google"
+  case mail = "ic_mail"
+  case lock = "ic_lock"
+
+  case home = "ic_home"
+  case edit = "ic_edit"
+  case favorite = "ic_favorite"
+  case market = "ic_market"
+  case person = "ic_person"
 }
 
-enum TextKeys {
-  static let signInFacebook: String = "sign_in_facebook"
-  static let signInGoogle: String = "sign_in_google"
-  static let signInApple: String = "sign_in_apple"
-  static let signUpEmail: String = "sign_up_email"
-  static let getStarted: String = "get_started"
-  static let welcomeBack: String = "welcome_back"
-  static let emailPlaceHolder: String = "email_placeholder"
-  static let passwordPlaceholder: String = "password_placeholder"
-  static let createAccount: String = "create_account"
-  static let termsAndCondition: String = "terms_and_condition"
+enum TextKeys: String {
+  case signInFacebook = "sign_in_facebook"
+  case signInGoogle = "sign_in_google"
+  case signInApple = "sign_in_apple"
+  case signUpEmail = "sign_up_email"
+  case getStarted = "get_started"
+  case welcomeBack = "welcome_back"
+  case emailPlaceHolder = "email_placeholder"
+  case passwordPlaceholder = "password_placeholder"
+  case createAccount = "create_account"
+  case termsAndCondition = "terms_and_condition"
+
+  case tabHome = "tab_home"
+  case tabMarket = "tab_market"
+  case tabCreate = "tab_create"
+  case tabWishlist = "tab_wishlist"
+  case tabAccount = "tab_account"
 }
 
 enum Texts {
